@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+ <title>Título da Página</title>
+  <meta http equiv="Content-Type" content="text/html;charset=iso-8859-1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+	background-color:  #006600;
+	font-size: 9px;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Berlin Sans FB;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #006600;
+      font-size: 50px;
+  }
+  .logo {
+      color: #006600;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #1a3d00;
+  }
+  .carousel-indicators li.active {
+      background-color: #1a3d00;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #1a3d00 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #003300;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" background-color="lightblue">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">QUEM SOMOS N&Oacute;S?</a></li>
+        <li><a href="#services">SERVI&Ccedil;OS</a></li>
+        <li><a href="#portfolio">COMENT&Aacute;RIOS</a></li>
+        <li><a href="#pricing">NOVIDADES</a></li>
+        <li><a href="#contact">CONTACTA-NOS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>RoddBartoll</h1> 
+  <p>A new start, a new generation of powerful and unique cars</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Quem somos n&oacute;s ?</h2><br>
+      <h4>This is a brand new portuguese car company called Bartoll, which mixes styles from  Toyota, and counts with a powerful engine, thats's actually the update to the Chevrollet Camaro's engine, so each car we release, it's a new version of the old engine, with better performance aswell. :)<br>
+      </h4>
+      <p>This new company is afilliated with Toyota and Chevrollet, so this is a third company which has the objective to beat the highest level on races, but also a confortable car.<br>
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4"></div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h4>News Page</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>Hor&aacute;rios:</h4>
+      <p></p>
+      <p>Segunda-feira - 10:00h-22:00h</p>
+      <p>Ter&ccedil;a-feira - 9:00h-19:30h</p>
+      <p>Quinta - feira - 10:00h-23:00h</p>
+      <p>Sexta-feira - 8:00h-00:00h</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+      <h4>Drop a LIKE on our Facebook Page!</h4>
+      <p>Best way to WIN giveaways or get LOW COST offers!</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>LOKING FOR A JOB ?</h4>
+      <p>Send us an email so we set all up to you :)<br>
+      </p>
+</div>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>These cars are LOW emissions, all for a safe planet :)</h4>
+      <p>Eletric cars in work right now.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>ALL RIGHTS RESERVED TO RoddBartoll, TOYOTA or Chevrollet companies.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>We are doing our best to improve the HP, stability and reduce the CO2 Emissions, which fortunatelly are really LOW right now. :)</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  
+  <p>&nbsp;</p>
+  <p><br>
+    
+  </p>
+  <h2><strong>Coment&aacute;rios em destaque</strong></h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Esta companhia &eacute; das melhores!! comprei j&aacute; o meu RoddBartoll L1, cheio de classe e a um pre&ccedil;o baixo! :D"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4><br><span>incr&iacute;vel. Nunca pensei! uma companhia portuguesa no TOPO, WOW :O</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Amazing.. Im from italy and Im checking out for your permission to add the RoddBartoll L3 GTR to my Journey in the World Grand Prix. Tested it and his performnance is just UNBELIEVABLE !! :D MORE THAN 350 KM/H..."<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+      <div class="item">
+     <h4>"O meu amigo morreu de uma explosao, ao ligar o motor... <b>Arranjem isso!!!</b>"<br><span>z&eacute; couves</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2><strong>NOVIDADES</strong></h2>
+    <h4>Aproveite os descontos !</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Classe: Sport</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Travoes    1 a 100  Km/h: </strong> 3 segundos</p>
+          <p><strong>Aceleracao 1 a 100 Km/h: </strong> 2.3 s</p>
+          <p><strong>Velocidade M&aacute;xima: </strong>370 KM/H</p>
+          <p><strong>2</strong> lugares</p>
+          <p><strong>RoddBartoll  </strong>L3 GTR</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$ 108,200<strong> (-$ 70,000)</strong></h3>
+          <h4>$ 1082 por mes</h4>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Classe: Econ&oacute;mica</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Travoes    1 a 100  Km/h: </strong> ~ 6 segundos</p>
+          <p><strong>Aceleracao 1 a 100 Km/h: </strong> 5.8 s</p>
+          <p><strong>Velocidade M&aacute;xima: </strong>254 KM/H</p>
+          <p><strong>7</strong> lugares</p>
+          <p><strong>RoddBartoll  </strong>L1</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$ 36,000<strong> (-$ 24,000)</strong></h3>
+          <h4>$ 360 por mes</h4>
+        </div>
+      </div>      
+    </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Contacta-nos</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Entre em contato connosco e n&oacute;s lhe enviaremos um email dentro de 24 horas, 2 dias caso haja problemas.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Lisboa, Portugal</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +351 925 320 644</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> davidsamuelcoelho@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(38.7095136,-9.3541581,17);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1AhpTDbn1Fu7QU2orjqTxngB9LUGnJbI&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
