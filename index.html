@@ -245,7 +245,7 @@
     </div>
   </div>
 </nav>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide slideanim" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
   </ol>
@@ -260,34 +260,34 @@
 </div>
 </div>
 
-<div id="Social" style="height:100%;width:100%;background-color:#262626">
+<div id="Social" style="height:100%;width:100%;background-color:#262626" class="slideanim">
 
 <p>CONFIRA AQUI OS LUGARES NO TOP 5!</p>
 
-<h4 style="height:40px;"><strong>#5 - Edif&iacute;cio Panoramico de Monsanto</strong></h4><br>
+<h4 style="height:40px;" class="slideanim"><strong>#5 - Edif&iacute;cio Panoramico de Monsanto</strong></h4><br>
 <a><strong><strong>Este espa&ccedil;o era suposto ser um hotel ou restaurante, com vista privilegiada para Lisboa, situado no lindo parque de Monsanto! As obras arrancaram em 1970, os projectos foram mudando, mas a obra nunca foi conclu&iacute;da! H&aacute; quem diga que uma onda de m&aacute; sorte paira na zona, impedindo a concretiza&ccedil;&atilde;o de qualquer obra neste local!</strong></a><br>
 <img src="no3.jpg" alt="Edificio Panoramico de 	Monsanto" width="500" height="333" class="center">
 
-<h4 style="height:40px;"> <strong>#4 - Convento de Mafra</strong></h4><br>
+<h4 style="height:40px;" class="slideanim"> <strong>#4 - Convento de Mafra</strong></h4><br>
 <a><strong>Mais do que fantasmas, diz-se em Mafra que estranhos seres habitam os calabou&ccedil;os do convento! H&aacute; quem fale numas ratazanas mutantes, imunes a qualquer desinfesta&ccedil;&atilde;o! Outros alegam que s&atildeo os esp&iacute;ritos dos antigos obreiros e trabalhadores, que ali padeceram, devido as condi&ccedil;&otilde;es prec&aacute;rias de trabalho, que ainda hoje assombram o local!</strong></a><br>
 <img src="no2.jpg" alt="Convento de Mafra" width="500" height="333" class="center">
 
-<h4 style="height:40px;"><strong>#3 - Teatro Lethes, Faro</strong></h4><br>
+<h4 style="height:40px;" class="slideanim"><strong>#3 - Teatro Lethes, Faro</strong></h4><br>
 <a><strong>Diz-se que por vezes e quando tudo est&aacute; em silencio, se pode escutar passos e a madeira do palco principal do Teatro de Lethes, em Faro, a ranger. Conta-se que uma bailarina, exausta pela exigencia, ali se suicidou, enforcando-se no palco do teatro e que a alma da bailarina, ainda hoje anda (ou dan&ccedil;a!) por ali ... </strong></a><br>
 <img src="no2.jpg" alt="Teatro Lethes, Faro" width="500" height="333" class="center">
 
-<h4 style="height:40px;"><strong>#2 - Sanat&oacute;rio de Mont Alto, Serra de Valongo</strong></h4><br>
+<h4 style="height:40px;" class="slideanim"><strong>#2 - Sanat&oacute;rio de Mont Alto, Serra de Valongo</strong></h4><br>
 <a><strong>Visitar uma ala psiqui&aacute;trica, j&aacute; &eacute; suficiente para sentir um friozinho de barriga! O Sanat&eacute;rio de Valongo foi aberto para cuidar de doentes com tuberculose e apesar das 50 camas, chegou a acolher 350 pacientes! Existem hist&oacute;ria de negligencia e maus-tratos documentadas, que logo se transformaram em lendas de arrepiar! N&atilde;o &eacute; pois uma surpresa, as hist&oacute;rias sobre esp&iacute;ritos dos doentes tuberculosos, que deambulam pelos corredores e assombram aqueles que por aqui se aventuram!</strong></a><br>
 <img src="no2.jpg" alt="Sanatorio de Mont Alto, Serra de Valongo" width="500" height="333" class="center">
 
-<h4 style="height:40px;"><strong>#1 - Bataria da Parede</<strong></h4><br>
+<h4 style="height:40px;" class="slideanim"><strong>#1 - Bataria da Parede</<strong></h4><br>
 <img src="no2.jpg" alt="Bataria da Parede" width="500" height="333" class="center">
 
 
-<h4 style="height:40px;">Localiza&ccedil;&otilde;es : <span class="glyphicon glyphicon-globe"></h4>  
+<h4 style="height:40px;" class="slideanim">Localiza&ccedil;&otilde;es : <span class="glyphicon glyphicon-globe"></h4>  
 </div>
 
-<div id="map"></div>
+<div id="map" class="slideanim"></div>
     <script>
       function initMap() {
         var uluru = {lat: 38.696868, lng: -9.3607997};
@@ -304,7 +304,7 @@
     <script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG5zRYtFlcdLpIKSmTH7MHo6fpqBoaZgU&callback=initMap">
 </script>
-	
+<script>
 	$(window).scroll(function() {
   $(".slideanim").each(function(){
     var pos = $(this).offset().top;
@@ -315,6 +315,7 @@
     }
   });
 });
+</script>
 	
 </body>
 </html>
