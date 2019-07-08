@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<head>
+
+<link rel="stylesheet" type="text/css" href="menucss.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+<body style = "background-color:  black; margin: 0; overflow: hidden; height:100%; width:auto; -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
+ unselectable="on"
+ onselectstart="return false" 
+ onmousedown="return false">
+
+
+<!--<div id="skipMessage" onclick="skip()" style="height: 100%; width: auto; display: none;"></div>-->
+
+<video height="100%" width="100%" poster="mainmenupage.png" id="vid" style="controls: none">
+         <source id="mp4video" type="video/mp4" src="videos/intro.mp4"></source>
+</video>
+</div>
+
+<div height="100%" width="100%" style="position: fixed center;">
+
+    <div id="single" onclick="myFunction()" style="display:block;"><p style="font-size:2vw;"><strong>SINGLE PLAYER</strong></p></div>
+    <div id="options" style="display:block;"><p style="font-size:2vw;"><strong>OPTIONS</strong></p></div>
+    <div id="credits" style="display:block;"><p style="font-size:2vw;"><strong>CREDITS</strong></p></div>
+
+</div>
+
+<a id="skipMessage" onclick="skip()" style="bottom: 5%; display: none;"><span><strong>Continue</strong></span></a>
+
+<label id="layer1" style="display: none"> </label>
+<label id="layer2" style="display: none"> </label>
+<label id="layer3" style="display: none"> </label>
+
+<div id="choiceA" class="container" style="display: none;">
+	
+	<a id="A1" style=" right: 30%;bottom: 5%;"><span><strong>I'm gonna watch a movie...</strong></span></a>
+	<a id="A2" style="bottom: 5%;"><span><strong>I'm gonna check outside...</strong></span></a>
+	  
+</div>
+
+<div id="choiceA1" class="container" style="display: none;">
+
+	<a id="A1_1" style=" right: 30%; bottom: 2%;"><span><strong>hide somewhere!</strong></span></a>
+	<a id="A1_2" style="bottom: 2%; color: lightblue"><span><strong>see who is there</strong></span></a>
+	
+	
+
+</div>
+
+<div id="choiceA1_1" class="container" style="display: none;">
+
+	<a id="A1_1_1" style="left: 30%; bottom: 9%;"><span><strong>I'm gonna watch a movie...</strong></span></a>
+	<a id="A1_1_2" style="left: 30%; bottom: 2%;"><span><strong>I'm gonna check outside...</strong></span></a>
+	<a id="A1_1_3" style="bottom: 9%;"><span><strong>I'm gonna check outside...</strong></span></a>
+	<a id="A1_1_4" style="bottom: 2%;"><span><strong>I'm gonna check outside...</strong></span></a>
+
+</div>
+
+<div id="choiceA1_2" class="container" style="display: none;">
+
+	<a id="A1_2_1" style="bottom: 9%;"><span><strong>I'm gonna watch a movie...</strong></span></a>
+	<a id="A1_2_2" style="bottom: 2%;"><span><strong>I'm gonna check outside...</strong></span></a>
+
+</div>
+
+<script type="text/javascript" src="Scripts/menu.js"></script>
+
+</body>
+</html>
