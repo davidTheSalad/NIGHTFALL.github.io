@@ -66,7 +66,7 @@
 #single p {
   position:relative;
   right:4px;
-  bottom: 25px;
+  bottom: 1%;
 }
 #options {
   position:absolute;
@@ -90,7 +90,7 @@
 #options p {
   position:relative;
   right:4px;
-  bottom: 10%;
+  bottom: 1%;
   
 }
 
@@ -116,7 +116,7 @@
 #credits p {
   position:relative;
   right:4px;
-  bottom: 25px;
+  bottom: 10%;
   
 }
 
