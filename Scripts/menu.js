@@ -149,7 +149,7 @@
 						var A1_1_3 = document.getElementById("A1_1_3");
 						var A1_1_4 = document.getElementById("A1_1_4");
 							    
-						var A1_1 = document.getElementById("A1_1_4");
+						var A1_1 = document.getElementById("A1_1");
 							    
 							    
 							    
