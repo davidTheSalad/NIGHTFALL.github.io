@@ -79,8 +79,6 @@
 						
 						if((this.currentTime >= 25.6) && (this.currentTime <= 26.4)) {
 						
-						
-						this.currentTime=26.5;
 						document.getElementById("vid").pause();
 						document.getElementById("skipMessage").style.display="block";
 						
@@ -102,9 +100,8 @@
 						
 						if((this.currentTime >= 31.2) && (this.currentTime <= 32)) {
 						
-								var A1_1 = document.getElementById("choiceA1");
+								var A1_1 = document.getElementById("A1_1");
 							
-									this.currentTime=32.1;
 									document.getElementById("vid").pause();
 									document.getElementById("choiceA1").style.display="block";
 							
@@ -114,9 +111,25 @@
 									this.currentTime=32.3;
 									document.getElementById("choiceA1").style.display="none";
 									document.getElementById("vid").play();
-									document.getElementById("layer1").style.display="block";
 									
 									newmp4 = "videos/A1_1.mp4";
+				
+										videocontainer.pause();
+										videosource.setAttribute("src", newmp4);
+										videocontainer.load();
+										videocontainer.play();
+									
+								}, false);
+							}
+							
+							if (A1_2.addEventListener) {
+								A1_2.addEventListener("click", function() {
+									
+									this.currentTime=32.3;
+									document.getElementById("choiceA1").style.display="none";
+									document.getElementById("vid").play();
+									
+									newmp4 = "videos/A2.mp4";
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
