@@ -122,6 +122,8 @@
 								}, false);
 							}
 							
+							var A1_2 = document.getElementById("A1_2");
+							
 							if (A1_2.addEventListener) {
 								A1_2.addEventListener("click", function() {
 									
