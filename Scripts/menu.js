@@ -123,7 +123,7 @@
 			A2.addEventListener("click", function() {
 				
 				this.currentTime=112.5;
-				document.getElementById("choiceA1").style.display="none";
+				document.getElementById("choiceA").style.display="none";
 				
 				newmp4 = "videos/A2.mp4";
 				
