@@ -159,7 +159,8 @@
 						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1").style.display="block";
 							    
-							    
+								});
+							    }
 							
 							if (A1_1_1.addEventListener) {
 								A1_1_1.addEventListener("click", function() {
