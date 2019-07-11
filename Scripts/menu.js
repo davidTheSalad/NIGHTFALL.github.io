@@ -142,7 +142,7 @@
 							
 						}
 	    					
-						if ((this.currentTime>=4) && (this.currentTime<=4.9) && (document.getElementById("layer1").style.display="block")){ 
+						if (document.getElementById("layer1").style.display="block"){ 
 							    
 	    					var A1_1_1 = document.getElementById("A1_1_1");
 						var A1_1_2 = document.getElementById("A1_1_2");
@@ -209,6 +209,7 @@
 									
 								}, false);
 							}
+						}
 	    
 	    
 }
