@@ -119,6 +119,8 @@
 						
 					}, false);
 		
+		var A2 = document.getElementById("A2");
+
 		if (A2.addEventListener) {
 			A2.addEventListener("click", function() {
 				
