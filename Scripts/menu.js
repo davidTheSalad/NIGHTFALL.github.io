@@ -65,7 +65,7 @@
 						if (A1.addEventListener) {
 							A1.addEventListener("click", function() {
 
-								this.currentTime=112.5;
+								this.currentTime=115;
 								document.getElementById("choiceA").style.display="none";
 
 								newmp4 = "videos/A1.mp4";
