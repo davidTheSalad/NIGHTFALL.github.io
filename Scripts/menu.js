@@ -149,6 +149,13 @@
 						var A1_1_3 = document.getElementById("A1_1_3");
 						var A1_1_4 = document.getElementById("A1_1_4");
 							    
+						var A1_1 = document.getElementById("A1_1_4");
+							    
+							    
+							    
+							    if (A1_1.addEventListener) {
+								A1_1.addEventListener("click", function() {
+							    
 						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1").style.display="block";
 							    
@@ -170,6 +177,8 @@
 									
 								}, false);
 							}
+							});
+						
 							    
 							if (A1_1_2.addEventListener) {
 								A1_1_2.addEventListener("click", function() {
