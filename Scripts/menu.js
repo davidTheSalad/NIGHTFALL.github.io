@@ -49,7 +49,21 @@
 		
 		var A1 = document.getElementById("A1");
 		var A2 = document.getElementById("A2");
-
+		if (A2.addEventListener) {
+			A2.addEventListener("click", function() {
+				
+				this.currentTime=112.5;
+				document.getElementById("choiceA").style.display="none";
+				
+				newmp4 = "videos/A2.mp4";
+				
+					videocontainer.pause();
+					videosource.setAttribute("src", newmp4);
+					videocontainer.load();
+					videocontainer.play();
+				
+			}, false);
+		}
 		if (A1.addEventListener) {
 			A1.addEventListener("click", function() {
 				
@@ -118,24 +132,6 @@
 						
 						
 					}, false);
-		
-		var A2 = document.getElementById("A2");
-
-		if (A2.addEventListener) {
-			A2.addEventListener("click", function() {
-				
-				this.currentTime=112.5;
-				document.getElementById("choiceA").style.display="none";
-				
-				newmp4 = "videos/A2.mp4";
-				
-					videocontainer.pause();
-					videosource.setAttribute("src", newmp4);
-					videocontainer.load();
-					videocontainer.play();
-				
-			}, false);
-		}
 		
 		});
 	}
