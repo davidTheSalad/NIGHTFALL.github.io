@@ -159,7 +159,7 @@
 						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1").style.display="block";
 							    
-								});
+								}, false);
 							    }
 							
 							if (A1_1_1.addEventListener) {
@@ -178,7 +178,6 @@
 									
 								}, false);
 							}
-							});
 						
 							    
 							if (A1_1_2.addEventListener) {
