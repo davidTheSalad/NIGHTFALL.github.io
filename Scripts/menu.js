@@ -15,7 +15,7 @@
 
 	document.getElementById("vid").addEventListener("timeupdate", function(){
 	
-							if((this.currentTime >= 113) && (this.currentTime <= 113.9) && (document.getElementById("skipMessage").style.display = "none")) {
+							if((this.currentTime >= 111) && (this.currentTime <= 111.9) && (document.getElementById("skipMessage").style.display = "none")) {
 
 
 							this.currentTime=112;
