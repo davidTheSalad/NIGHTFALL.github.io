@@ -81,6 +81,7 @@
 						
 						if((this.currentTime >= 25.6) && (this.currentTime <= 26.4)) {
 						
+						this.currentTime=26.5;
 						document.getElementById("vid").pause();
 						document.getElementById("skipMessage").style.display="block";
 						
