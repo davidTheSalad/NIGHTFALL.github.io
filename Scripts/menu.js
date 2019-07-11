@@ -29,7 +29,7 @@
 								if (el.addEventListener) {
 									el.addEventListener("click", function() {
 
-										this.currentTime=112.5;
+										this.currentTime=114;
 										document.getElementById("skipMessage").style.display="none";
 										document.getElementById("vid").play();
 
