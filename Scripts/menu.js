@@ -75,7 +75,9 @@
 					videocontainer.load();
 					videocontainer.play();
 				
-						document.getElementById("vid").addEventListener("timeupdate", function(){
+				}, false);
+		
+		});
 						
 						if((this.currentTime >= 25.6) && (this.currentTime <= 26.4)) {
 						
@@ -93,10 +95,6 @@
 							}
 						
 						}
-						
-						}, false);
-						
-					document.getElementById("vid").addEventListener("timeupdate", function(){
 						
 						if((this.currentTime >= 31.2) && (this.currentTime <= 32)) {
 						
@@ -140,14 +138,7 @@
 									
 								}, false);
 							}
-								
 						}
-						
-						
-					}, false);
-		
-		});
-	}
 }
 });
 }
