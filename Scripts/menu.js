@@ -83,6 +83,7 @@ function myFunction() {
 									videosource.setAttribute("src", newmp4);
 									videocontainer.load();
 									videocontainer.play();
+                                                                        document.getElementById("layer1").style.display="block";
 
 								}, false);
 							}
@@ -99,6 +100,7 @@ function myFunction() {
 											videosource.setAttribute("src", newmp4);
 											videocontainer.load();
 											videocontainer.play();
+                                                                                        document.getElementById("layer1").style.display="block";
 
 									}, false);
 						}
@@ -116,7 +118,6 @@ function myFunction() {
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
 										videocontainer.play();
-									document.getElementById("layer1").style.display="block";
 									
 								}, false);
 							}
