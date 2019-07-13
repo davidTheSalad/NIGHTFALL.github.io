@@ -9,7 +9,7 @@ function myFunction() {
 				var A1_1 = document.getElementById("A1_1");
 				var A1_2 = document.getElementById("A1_2");
 				var x = document.getElementById("myDIV");
-                                var newposter = "pitch-black-image.png";
+                                
 				var newmp4;
 
 
@@ -19,7 +19,7 @@ function myFunction() {
 
     document.getElementById("vid").play();
 
-    videosource.setAttribute("poster",newposter);
+    document.getElementById("myVideo").poster = "pitch-black-image.png";
 
 	document.getElementById("vid").addEventListener("timeupdate", function(){
 	
