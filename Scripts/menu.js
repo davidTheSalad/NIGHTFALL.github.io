@@ -79,7 +79,7 @@ function myFunction() {
 
 									videocontainer.pause();
 									videosource.setAttribute("src", newmp4);
-                                                                        document.getElementById("myVideo").poster = "pitch-black-image.png";
+                                                                        document.getElementById("vid").poster = "pitch-black-image.png";
 									videocontainer.load();
 									videocontainer.play();
                                                                         document.getElementById("layer1").style.display="block";
@@ -97,7 +97,7 @@ function myFunction() {
 
 											videocontainer.pause();
 											videosource.setAttribute("src", newmp4);
-                                                                                        document.getElementById("myVideo").poster = "pitch-black-image.png";
+                                                                                        document.getElementById("vid").poster = "pitch-black-image.png";
 											videocontainer.load();
 											videocontainer.play();
                                                                                         document.getElementById("layer1").style.display="block";
