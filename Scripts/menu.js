@@ -39,9 +39,11 @@ function myFunction() {
 							
 							document.getElementById("vid").pause();
 
+                                                        document.getElementById("layer1").style.display="block";
+
 						}
 
-                                                if (window.getComputedStyle(layer1).display === "none") {
+                                                if (window.getComputedStyle(layer1).display === "block") {
 
 						if((this.currentTime >= 25.6) && (this.currentTime <= 26.4)) {
 						
