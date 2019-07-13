@@ -8,7 +8,6 @@ function myFunction() {
 				var A2 = document.getElementById("A2");
 				var A1_1 = document.getElementById("A1_1");
 				var A1_2 = document.getElementById("A1_2");
-				var x = document.getElementById("myDIV");
                                 
 				var newmp4;
 
@@ -18,8 +17,6 @@ function myFunction() {
     document.getElementById("credits").style.display="none";
 
     document.getElementById("vid").play();
-
-    document.getElementById("myVideo").poster = "pitch-black-image.png";
 
 	document.getElementById("vid").addEventListener("timeupdate", function(){
 	
@@ -82,6 +79,7 @@ function myFunction() {
 
 									videocontainer.pause();
 									videosource.setAttribute("src", newmp4);
+                                                                        document.getElementById("myVideo").poster = "pitch-black-image.png";
 									videocontainer.load();
 									videocontainer.play();
                                                                         document.getElementById("layer1").style.display="block";
@@ -99,6 +97,7 @@ function myFunction() {
 
 											videocontainer.pause();
 											videosource.setAttribute("src", newmp4);
+                                                                                        document.getElementById("myVideo").poster = "pitch-black-image.png";
 											videocontainer.load();
 											videocontainer.play();
                                                                                         document.getElementById("layer1").style.display="block";
