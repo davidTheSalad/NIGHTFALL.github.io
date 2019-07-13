@@ -18,6 +18,8 @@ function myFunction() {
 
     document.getElementById("vid").play();
 
+    document.getElementById("vid").setAttribute("poster","");
+
 	document.getElementById("vid").addEventListener("timeupdate", function(){
 	
 							if((this.currentTime >= 111) && (this.currentTime <=111.8)){
