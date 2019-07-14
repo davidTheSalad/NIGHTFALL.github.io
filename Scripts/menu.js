@@ -99,10 +99,11 @@ function myFunction() {
 								document.getElementById("choiceA").style.display="none";
 
 								newmp4 = "videos/A1.mp4";
-								videocontainer.load();
+								
 
 									videocontainer.pause();
 									videosource.setAttribute("src", newmp4);
+									videocontainer.load();
 									videocontainer.play();
                                                                         document.getElementById("layer1").style.display="block";
 
@@ -116,10 +117,10 @@ function myFunction() {
 								document.getElementById("choiceA").style.display="none";
 
 										newmp4 = "videos/A2.mp4";
-										videocontainer.load();
 
 											videocontainer.pause();
 											videosource.setAttribute("src", newmp4);
+											videocontainer.load();
 											videocontainer.play();
                                                                                         document.getElementById("layer1").style.display="block";
 
@@ -134,10 +135,10 @@ function myFunction() {
 									document.getElementById("vid").play();
 									
 									newmp4 = "videos/A1_1.mp4";
-									videocontainer.load();
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
+										videocontainer.load();
 										videocontainer.play();
 										document.getElementById("layer2").style.display="block";
 									
@@ -154,10 +155,10 @@ function myFunction() {
 									document.getElementById("vid").play();
 									
 									newmp4 = "videos/A2.mp4";
-									videocontainer.load();
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
+										videocontainer.load();
 										videocontainer.play();
 									
 								}, false);
@@ -197,10 +198,10 @@ function myFunction() {
 									document.getElementById("vid").play();
 									
 									newmp4 = "videos/A1_1_.mp4";
-									videocontainer.load();
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
+										videocontainer.load();
 										videocontainer.play();
 										document.getElementById("layer3").style.display="block";
 									
