@@ -12,6 +12,8 @@ function myFunction() {
 				var A1_1_2 = document.getElementById("A1_2");
                                 var A1_1_3 = document.getElementById("A1_1_3");
 				var A1_1_4 = document.getElementById("A1_1_4");
+				var A1_1_4_1 = document.getElementById("A1_1_4_1");
+				var A1_1_4_2 = document.getElementById("A1_1_4_2");
 				var x1 = document.getElementById("layer1");
 				var x2 = document.getElementById("layer2");
 				var x3 = document.getElementById("layer3");
