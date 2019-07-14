@@ -105,6 +105,7 @@ function myFunction() {
 
 						if ((this.currentTime >= 1.5) && (this.currentTime <= 2.5)) {
 							
+						this.currentTime=2.6;
 						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1_4").style.display="block";
 						}
@@ -130,6 +131,7 @@ function myFunction() {
 
 						if ((this.currentTime >= 2.5) && (this.currentTime <=3.3)) {
 						
+						this.currentTime=3.4;
 						document.getElementById("vid").pause();
 						document.getElementById("skipMessage").style.display="block";
 						}
