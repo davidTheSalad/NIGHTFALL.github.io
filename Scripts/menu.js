@@ -71,7 +71,7 @@ function myFunction() {
 						document.getElementById("skipMessage").style.display="block";
 						}
 						
-						if(this.currentTime == 10) {
+						if(this.currentTime >= 10) {
 							
 									document.getElementById("vid").pause();
 									document.getElementById("choiceA1_1").style.display="block";
