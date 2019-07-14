@@ -92,7 +92,7 @@ function myFunction() {
 						if (this.currentTime >= 1.5) {
 							
 						document.getElementById("vid").pause();
-						document.getElementById("skipMessage").style.display="block";
+						document.getElementById("choiceA1_1_4").style.display="block";
 						}
                                                 }
 
