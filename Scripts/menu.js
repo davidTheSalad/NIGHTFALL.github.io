@@ -93,7 +93,7 @@ function myFunction() {
 		
 						if (window.getComputedStyle(x3).display === "block") {
 
-						if (this.currentTime >= 1.5) {
+						if ((this.currentTime >= 1.5) && (this.currentTime >= 2.5)) {
 							
 						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1_4").style.display="block";
@@ -252,6 +252,7 @@ function myFunction() {
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
 										videocontainer.play();
+										document.getElementById("layer3").style.display="none";
 									
 								}, false);
 							}
