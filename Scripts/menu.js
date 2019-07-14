@@ -97,6 +97,24 @@ function myFunction() {
 						document.getElementById("choiceA1_1_4").style.display="block";
 						}
                                                 }
+		
+						if (window.getComputedStyle(x4).display === "block") {
+
+						if ((this.currentTime >= 7) && (this.currentTime <=9.5)) {
+							
+						document.getElementById("vid").pause();
+						document.getElementById("choiceA1_1_4_1").style.display="block";
+						}
+						}
+		
+						if (window.getComputedStyle(x5).display === "block") {
+
+						if ((this.currentTime >= 8) && (this.currentTime <=10.5)) {
+							
+						document.getElementById("vid").pause();
+						document.getElementById("choiceA1_1_4_2").style.display="block";
+						}
+						}
 
                                                 if (el.addEventListener) {
 								el.addEventListener("click", function() {
@@ -217,6 +235,36 @@ function myFunction() {
 										videocontainer.load();
 										videocontainer.play();
 										document.getElementById("layer3").style.display="block";
+									
+								}, false);
+							}
+		
+							if (A1_1_4_1.addEventListener) {
+								A1_1_4_1.addEventListener("click", function() {
+
+									document.getElementById("choiceA1_1_4").style.display="none";
+									
+									newmp4 = "videos/A1_1_4_1.mp4";
+				
+										videocontainer.pause();
+										videosource.setAttribute("src", newmp4);
+										videocontainer.load();
+										videocontainer.play();
+									
+								}, false);
+							}
+		
+							if (A1_1_4_2.addEventListener) {
+								A1_1_4_2.addEventListener("click", function() {
+
+									document.getElementById("choiceA1_1_4").style.display="none";
+									
+									newmp4 = "videos/A1_1_4_2.mp4";
+				
+										videocontainer.pause();
+										videosource.setAttribute("src", newmp4);
+										videocontainer.load();
+										videocontainer.play();
 									
 								}, false);
 							}
