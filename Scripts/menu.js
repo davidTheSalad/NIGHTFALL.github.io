@@ -31,9 +31,9 @@ function myFunction() {
 	
 	document.getElementById("vid").addEventListener("timeupdate", function(){
 	
-							if((this.currentTime >= 111) && (this.currentTime <=111.8)){
+							if((this.currentTime >= 111) && (this.currentTime <=111.7)){
 
-							this.currentTime = 111.9;
+							this.currentTime = 111.8;
 							document.getElementById("vid").pause();
 
 							document.getElementById("skipMessage").style.display="block";
