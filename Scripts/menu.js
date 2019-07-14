@@ -8,6 +8,10 @@ function myFunction() {
 				var A2 = document.getElementById("A2");
 				var A1_1 = document.getElementById("A1_1");
 				var A1_2 = document.getElementById("A1_2");
+                                var A1_1_1 = document.getElementById("A1_1");
+				var A1_1_2 = document.getElementById("A1_2");
+                                var A1_1_3 = document.getElementById("A1_1_3");
+				var A1_1_4 = document.getElementById("A1_1_4");
                                 
 				var newmp4;
 
@@ -41,7 +45,7 @@ function myFunction() {
 
 						}
 
-                                                if (window.getComputedStyle(layer1).display === "block") {
+                                                if (window.getComputedStyle("layer1").display === "block") {
 
 						if((this.currentTime >= 25.4) && (this.currentTime <= 26.2)) {
 						
@@ -51,6 +55,23 @@ function myFunction() {
 						}
 						
 						if((this.currentTime >= 31.2) && (this.currentTime <= 32.2)) {
+							
+									document.getElementById("vid").pause();
+									document.getElementById("choiceA1").style.display="block";
+							
+						}
+                                                }
+
+                                                if (window.getComputedStyle("layer2").display === "block") {
+
+						if((this.currentTime >= 4.5) && (this.currentTime <= 5.2)) {
+						
+						this.currentTime=5.3;
+						document.getElementById("vid").pause();
+						document.getElementById("skipMessage").style.display="block";
+						}
+						
+						if(this.currentTime == 10) {
 							
 									document.getElementById("vid").pause();
 									document.getElementById("choiceA1").style.display="block";
