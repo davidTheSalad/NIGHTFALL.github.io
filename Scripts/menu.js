@@ -17,6 +17,8 @@ function myFunction() {
 				var x1 = document.getElementById("layer1");
 				var x2 = document.getElementById("layer2");
 				var x3 = document.getElementById("layer3");
+				var x4 = document.getElementById("layer4");
+				var x5 = document.getElementById("layer5");
                                 
 				var newmp4;
 
