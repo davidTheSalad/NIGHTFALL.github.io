@@ -208,7 +208,7 @@ function myFunction() {
 
 									document.getElementById("choiceA1_1").style.display="none";
 									
-									newmp4 = "videos/A1_1_.mp4";
+									newmp4 = "videos/A1_1_4.mp4";
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
