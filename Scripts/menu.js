@@ -43,9 +43,9 @@ function myFunction() {
 
                                                 if (window.getComputedStyle(layer1).display === "block") {
 
-						if((this.currentTime >= 25.6) && (this.currentTime <= 26.4)) {
+						if((this.currentTime >= 25.4) && (this.currentTime <= 26.2)) {
 						
-						this.currentTime=26.5;
+						this.currentTime=26.3;
 						document.getElementById("vid").pause();
 						document.getElementById("skipMessage").style.display="block";
 						}
