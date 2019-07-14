@@ -136,7 +136,7 @@ function myFunction() {
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
-										videocontainer.play();
+										videocontainer.play();document.getElementById("layer2").style.display="block";
 									
 								}, false);
 							}
