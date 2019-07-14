@@ -79,20 +79,25 @@ function myFunction() {
 						document.getElementById("layer2").style.display="block";
 						}
 						
-						if((this.currentTime >= 10) && (this.currentTime <= 12.6)) {
+						if((this.currentTime >= 10) && (this.currentTime <= 12.5)) {
 							
 									document.getElementById("choiceA1_1").style.display="block";
+							
+						}
+							
+						if(this.currentTime >= 12.6) {
+							
+									document.getElementById("choiceA1_1").style.display="none";
 							
 						}
                                                 }
 		
 						if (window.getComputedStyle(x3).display === "block") {
 
-						if ((this.currentTime >= 1.5) && (this.currentTime >= 2.5)) {
+						if ((this.currentTime >= 1.5) && (this.currentTime <= 2.5)) {
 							
 						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1_4").style.display="block";
-						document.getElementById("layer3").style.display="none";
 						}
                                                 }
 		
@@ -102,7 +107,6 @@ function myFunction() {
 							
 						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1_4_1").style.display="block";
-						document.getElementById("layer4").style.display="block";
 						}
 						}
 		
@@ -112,7 +116,6 @@ function myFunction() {
 							
 						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1_4_2").style.display="block";
-						document.getElementById("layer5").style.display="block";
 						}
 						}
 
@@ -250,6 +253,8 @@ function myFunction() {
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
 										videocontainer.play();
+										document.getElementById("layer3").style.display="none";
+										document.getElementById("layer4").style.display="block";
 									
 								}, false);
 							}
@@ -265,6 +270,8 @@ function myFunction() {
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
 										videocontainer.play();
+										document.getElementById("layer3").style.display="none";
+										document.getElementById("layer5").style.display="block";
 									
 								}, false);
 							}
