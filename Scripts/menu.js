@@ -12,6 +12,8 @@ function myFunction() {
 				var A1_1_2 = document.getElementById("A1_2");
                                 var A1_1_3 = document.getElementById("A1_1_3");
 				var A1_1_4 = document.getElementById("A1_1_4");
+				var layer1 = document.getElementById("layer1");
+				var layer2 = document.getElementById("layer2");
                                 
 				var newmp4;
 
@@ -45,7 +47,7 @@ function myFunction() {
 
 						}
 
-                                                if (window.getComputedStyle("layer1").display === "block") {
+                                                if (window.getComputedStyle(layer1).display === "block") {
 
 						if((this.currentTime >= 25.4) && (this.currentTime <= 26.2)) {
 						
@@ -62,7 +64,7 @@ function myFunction() {
 						}
                                                 }
 
-                                                if (window.getComputedStyle("layer2").display === "block") {
+                                                if (window.getComputedStyle(layer2).display === "block") {
 
 						if((this.currentTime >= 4.5) && (this.currentTime <= 5.2)) {
 						
