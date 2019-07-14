@@ -14,6 +14,7 @@ function myFunction() {
 				var A1_1_4 = document.getElementById("A1_1_4");
 				var x1 = document.getElementById("layer1");
 				var x2 = document.getElementById("layer2");
+				var x3 = document.getElementById("layer3");
                                 
 				var newmp4;
 
@@ -83,6 +84,15 @@ function myFunction() {
 							
 									document.getElementById("choiceA1_1").style.display="none";
 							
+						}
+                                                }
+		
+						if (window.getComputedStyle(x3).display === "block") {
+
+						if (this.currentTime >= 1.5) {
+							
+						document.getElementById("vid").pause();
+						document.getElementById("skipMessage").style.display="block";
 						}
                                                 }
 
