@@ -23,7 +23,7 @@ function myFunction() {
     document.getElementById("credits").style.display="none";
 
     document.getElementById("vid").play();
-
+	
 	document.getElementById("vid").addEventListener("timeupdate", function(){
 	
 							if((this.currentTime >= 111) && (this.currentTime <=111.8)){
@@ -102,7 +102,6 @@ function myFunction() {
 
 									videocontainer.pause();
 									videosource.setAttribute("src", newmp4);
-									videocontainer.load();
 									videocontainer.play();
                                                                         document.getElementById("layer1").style.display="block";
 
@@ -119,7 +118,6 @@ function myFunction() {
 
 											videocontainer.pause();
 											videosource.setAttribute("src", newmp4);
-                                                                                        videocontainer.load();
 											videocontainer.play();
                                                                                         document.getElementById("layer1").style.display="block";
 
@@ -137,8 +135,8 @@ function myFunction() {
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
-										videocontainer.load();
-										videocontainer.play();document.getElementById("layer2").style.display="block";
+										videocontainer.play();
+										document.getElementById("layer2").style.display="block";
 									
 								}, false);
 							}
@@ -156,7 +154,6 @@ function myFunction() {
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
-										videocontainer.load();
 										videocontainer.play();
 									
 								}, false);
@@ -199,8 +196,8 @@ function myFunction() {
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
-										videocontainer.load();
-										videocontainer.play();document.getElementById("layer3").style.display="block";
+										videocontainer.play();
+										document.getElementById("layer3").style.display="block";
 									
 								}, false);
 							}
