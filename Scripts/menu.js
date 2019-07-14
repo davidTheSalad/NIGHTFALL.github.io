@@ -75,7 +75,6 @@ function myFunction() {
 						
 						if(this.currentTime >= 10) {
 							
-									document.getElementById("vid").pause();
 									document.getElementById("choiceA1_1").style.display="block";
 							
 						}
@@ -168,7 +167,6 @@ function myFunction() {
 								A1_1_1.addEventListener("click", function() {
 
 									document.getElementById("choiceA1_1").style.display="none";
-									document.getElementById("vid").play();
 									
 								}, false);
 							}
@@ -177,7 +175,6 @@ function myFunction() {
 								A1_1_2.addEventListener("click", function() {
 
 									document.getElementById("choiceA1_1").style.display="none";
-									document.getElementById("vid").play();
 									
 								}, false);
 							}
@@ -186,7 +183,6 @@ function myFunction() {
 								A1_1_3.addEventListener("click", function() {
 
 									document.getElementById("choiceA1_1").style.display="none";
-									document.getElementById("vid").play();
 									
 								}, false);
 							}
@@ -195,7 +191,6 @@ function myFunction() {
 								A1_1_4.addEventListener("click", function() {
 
 									document.getElementById("choiceA1_1").style.display="none";
-									document.getElementById("vid").play();
 									
 									newmp4 = "videos/A1_1_.mp4";
 				
