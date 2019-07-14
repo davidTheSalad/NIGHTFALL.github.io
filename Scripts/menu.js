@@ -76,7 +76,6 @@ function myFunction() {
 						this.currentTime=5.3;
 						document.getElementById("vid").pause();
 						document.getElementById("skipMessage").style.display="block";
-						document.getElementById("layer2").style.display="block";
 						}
 						
 						if((this.currentTime >= 10) && (this.currentTime <= 12.5)) {
@@ -237,6 +236,7 @@ function myFunction() {
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
 										videocontainer.play();
+										document.getElementById("layer2").style.display="none";
 										document.getElementById("layer3").style.display="block";
 									
 								}, false);
