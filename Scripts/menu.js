@@ -78,6 +78,12 @@ function myFunction() {
 									document.getElementById("choiceA1_1").style.display="block";
 							
 						}
+							
+						if(this.currentTime >= 12.6) {
+							
+									document.getElementById("choiceA1_1").style.display="none";
+							
+						}
                                                 }
 
                                                 if (el.addEventListener) {
