@@ -19,6 +19,7 @@ function myFunction() {
 				var x3 = document.getElementById("layer3");
 				var x4 = document.getElementById("layer4");
 				var x5 = document.getElementById("layer5");
+				var x6 = document.getElementById("layer6");
                                 
 				var newmp4;
 
@@ -270,6 +271,23 @@ function myFunction() {
 										videocontainer.play();
 										document.getElementById("layer3").style.display="none";
 										document.getElementById("layer5").style.display="block";
+									
+								}, false);
+							}
+		
+							if (A1_1_4_1_1.addEventListener) {
+								A1_1_4_1_1.addEventListener("click", function() {
+
+									document.getElementById("choiceA1_1_4_1").style.display="none";
+									
+									newmp4 = "videos/A1_1_4_2.mp4";
+				
+										videocontainer.pause();
+										videosource.setAttribute("src", newmp4);
+										videocontainer.load();
+										videocontainer.play();
+										document.getElementById("layer4").style.display="none";
+										document.getElementById("layer6").style.display="block";
 									
 								}, false);
 							}
