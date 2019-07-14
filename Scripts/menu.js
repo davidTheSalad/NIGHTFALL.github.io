@@ -138,6 +138,7 @@ function myFunction() {
 							
 						if ((this.currentTime >= 4.7) && (this.currentTime <=5.5)) {
 							
+						this.currentTime=5.6;							
 						document.getElementById("vid").pause();
 						document.getElementById("skipMessage").style.display="block";
 						}
@@ -153,6 +154,7 @@ function myFunction() {
 
 						if ((this.currentTime >= 1.1) && (this.currentTime <=2.0)) {
 							
+						this.currentTime=2.1;
 						document.getElementById("skipMessage").style.display="block";
 						}
 						}
@@ -216,6 +218,7 @@ function myFunction() {
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
 										videocontainer.play();
+										document.getElementById("layer1").style.display="none";
 										document.getElementById("layer2").style.display="block";
 									
 								}, false);
