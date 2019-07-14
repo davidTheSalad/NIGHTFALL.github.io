@@ -162,17 +162,43 @@ function myFunction() {
 		
 							if (A1_1_1.addEventListener) {
 								A1_1_1.addEventListener("click", function() {
-									
-									this.currentTime=32.3;
+
 									document.getElementById("choiceA1_1").style.display="none";
 									document.getElementById("vid").play();
 									
-									newmp4 = "videos/A1_1.mp4";
+								}, false);
+							}
+
+                                                        if (A1_1_2.addEventListener) {
+								A1_1_2.addEventListener("click", function() {
+
+									document.getElementById("choiceA1_1").style.display="none";
+									document.getElementById("vid").play();
+									
+								}, false);
+							}
+
+                                                        if (A1_1_3.addEventListener) {
+								A1_1_3.addEventListener("click", function() {
+
+									document.getElementById("choiceA1_1").style.display="none";
+									document.getElementById("vid").play();
+									
+								}, false);
+							}
+
+                                                        if (A1_1_4.addEventListener) {
+								A1_1_4.addEventListener("click", function() {
+
+									document.getElementById("choiceA1_1").style.display="none";
+									document.getElementById("vid").play();
+									
+									newmp4 = "videos/A1_1_.mp4";
 				
 										videocontainer.pause();
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
-										videocontainer.play();document.getElementById("layer2").style.display="block";
+										videocontainer.play();document.getElementById("layer3").style.display="block";
 									
 								}, false);
 							}
