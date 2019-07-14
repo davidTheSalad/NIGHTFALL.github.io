@@ -26,9 +26,9 @@ function myFunction() {
 				var x6 = document.getElementById("layer6");
 				var x7 = document.getElementById("layer7");
 				var FINAL = document.getElementById("FINAL");
-				var FINAL1 = document.getElementById("FINAL3");
+				var FINAL1 = document.getElementById("FINAL1");
 				var FINAL2 = document.getElementById("FINAL2");
-				var FINAL3 = document.getElementById("FINAL1");
+				var FINAL3 = document.getElementById("FINAL3");
                                 
 				var newmp4;
 
@@ -316,7 +316,7 @@ function myFunction() {
 							if (A1_1_4_1_1.addEventListener) {
 								A1_1_4_1_1.addEventListener("click", function() {
 
-									document.getElementById("choiceA1_1_4_1_1").style.display="none";
+									document.getElementById("choiceA1_1_4_1").style.display="none";
 									
 									newmp4 = "videos/A1_1_x_.mp4";
 				
@@ -333,7 +333,7 @@ function myFunction() {
 							if (A1_1_4_1_2.addEventListener) {
 								A1_1_4_1_2.addEventListener("click", function() {
 
-									document.getElementById("choiceA1_1_4_1_1").style.display="none";
+									document.getElementById("choiceA1_1_4_1").style.display="none";
 									
 									newmp4 = "videos/FINAL.mp4";
 				
@@ -350,7 +350,7 @@ function myFunction() {
 							if (A1_1_4_2_1.addEventListener) {
 								A1_1_4_2_1.addEventListener("click", function() {
 
-									document.getElementById("choiceA1_1_4_1_2").style.display="none";
+									document.getElementById("choiceA1_1_4_2").style.display="none";
 									
 									newmp4 = "videos/A1_1_x_.mp4";
 				
@@ -367,7 +367,7 @@ function myFunction() {
 							if (A1_1_4_2_2.addEventListener) {
 								A1_1_4_2_2.addEventListener("click", function() {
 
-									document.getElementById("choiceA1_1_4_1_2").style.display="none";
+									document.getElementById("choiceA1_1_4_2").style.display="none";
 										document.getElementById("layer5").style.display="none";
 									
 								}, false);
