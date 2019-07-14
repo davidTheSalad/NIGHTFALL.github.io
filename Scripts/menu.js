@@ -104,7 +104,6 @@ function myFunction() {
 
 						if ((this.currentTime >= 7) && (this.currentTime <=9.5)) {
 							
-						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1_4_1").style.display="block";
 						}
 						}
@@ -113,7 +112,6 @@ function myFunction() {
 
 						if ((this.currentTime >= 8) && (this.currentTime <=10.5)) {
 							
-						document.getElementById("vid").pause();
 						document.getElementById("choiceA1_1_4_2").style.display="block";
 						}
 						}
