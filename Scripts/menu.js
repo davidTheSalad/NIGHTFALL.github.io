@@ -74,7 +74,7 @@ function myFunction() {
 						if(this.currentTime == 10) {
 							
 									document.getElementById("vid").pause();
-									document.getElementById("choiceA1").style.display="block";
+									document.getElementById("choiceA1_1").style.display="block";
 							
 						}
                                                 }
@@ -156,6 +156,23 @@ function myFunction() {
 										videosource.setAttribute("src", newmp4);
 										videocontainer.load();
 										videocontainer.play();
+									
+								}, false);
+							}
+		
+							if (A1_1_1.addEventListener) {
+								A1_1_1.addEventListener("click", function() {
+									
+									this.currentTime=32.3;
+									document.getElementById("choiceA1_1").style.display="none";
+									document.getElementById("vid").play();
+									
+									newmp4 = "videos/A1_1.mp4";
+				
+										videocontainer.pause();
+										videosource.setAttribute("src", newmp4);
+										videocontainer.load();
+										videocontainer.play();document.getElementById("layer2").style.display="block";
 									
 								}, false);
 							}
