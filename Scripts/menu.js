@@ -3,8 +3,9 @@ function myFunction() {
 
 				var videocontainer = document.getElementById("vid");
 				var videosource = document.getElementById("mp4video");
+				var el2 = document.getElementById("skipStory");
 				var el = document.getElementById("skipMessage");
-				var A1 = document.getElementById("A1");
+                                var A1 = document.getElementById("A1");
 				var A2 = document.getElementById("A2");
 				var A1_1 = document.getElementById("A1_1");
 				var A1_2 = document.getElementById("A1_2");
