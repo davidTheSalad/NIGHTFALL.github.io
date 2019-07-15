@@ -186,7 +186,7 @@ function myFunction() {
                                                 if (el2.addEventListener) {
 								el2.addEventListener("click", function() {
 									
-									this.currentTime+=82;
+									this.currentTime+=62;
 
 									document.getElementById("vid").play();
 									document.getElementById("skipStory").style.display="none";
