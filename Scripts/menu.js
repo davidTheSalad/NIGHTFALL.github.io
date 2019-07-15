@@ -43,7 +43,6 @@ function myFunction() {
 
                                                         if((this.currentTime >= 25) && (this.currentTime <=25.7)){
 
-							this.currentTime = 25.8;
 
                                                         document.getElementById("skipStory").style.display="block";
 
