@@ -40,10 +40,24 @@ function myFunction() {
     document.getElementById("vid").play();
 	
 	document.getElementById("vid").addEventListener("timeupdate", function(){
-	
+
+                                                        if((this.currentTime >= 25) && (this.currentTime <=25.7)){
+
+							this.currentTime = 25.8;
+
+                                                        document.getElementById("skipStory").style.display="block";
+
+							document.getElementById("vid").pause();
+
+							document.getElementById("skipMessage").style.display="block";
+
+
+							}
+
 							if((this.currentTime >= 111) && (this.currentTime <=111.7)){
 
-							this.currentTime = 111.8;
+						        document.getElementById("skipStory").style.display="block";
+
 							document.getElementById("vid").pause();
 
 							document.getElementById("skipMessage").style.display="block";
@@ -165,6 +179,18 @@ function myFunction() {
 									this.currentTime+=1;
 									document.getElementById("vid").play();
 									document.getElementById("skipMessage").style.display="none";
+									
+									
+								}, false);
+						}
+
+                                                if (el2.addEventListener) {
+								el2.addEventListener("click", function() {
+									
+									this.currentTime+=1;
+
+									document.getElementById("vid").play();
+									document.getElementById("skipStory").style.display="none";
 									
 									
 								}, false);
