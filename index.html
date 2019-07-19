@@ -11,6 +11,13 @@
  onselectstart="return false" 
  onmousedown="return false" scroll="no">
 
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>p
+
+
 <video height="95%" width="100%" poster="mainmenupage.png" id="vid" style="controls: none">
          <source id="mp4video" type="video/mp4" src="videos/intro.mp4"></source>
 </video>
@@ -21,6 +28,12 @@
     <div id="single" onclick="myFunction()" style="display:block;"><p style="font-size:2vw;"><strong>SINGLE PLAYER</strong></p></div>
     <div id="options" style="display:block;"><p style="font-size:2vw;"><strong>OPTIONS</strong></p></div>
     <div id="credits" style="display:block;"><p style="font-size:2vw;"><strong>CREDITS</strong></p></div>
+
+</div>
+
+<div id="lightbox">
+
+<a id="MainMenu" bottom: 5%; display: none;"><span><strong>Main menu</strong></span></a>
 
 </div>
 
