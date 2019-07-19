@@ -8,6 +8,11 @@
 
 }
 
+#lightbox {
+   background: white;
+   border: 20px solid rgba(0, 0, 0, 0.3);
+}
+
 #allthethings {
 
   height: 100%;
