@@ -48,8 +48,9 @@ document.getElementById("vid").play();
 	   && x4.style.display === "none" && x7.style.display === "none" && x6.style.display === "none" 
 	   && x7.style.display === "none")
 	{
-		if((this.currentTime >= 25) && (this.currentTime <=25.7))
+		if((this.currentTime >= 25) && (this.currentTime <=25.5))
 		{
+			this.currentTime=26;
 			el2.style.display="block";
 			videocontainer.pause();
 			el.style.display="block";
@@ -150,7 +151,7 @@ document.getElementById("vid").play();
 			{			
 				el.style.display="none";
 				el2.style.display="none";
-				this.currentTime+=1.5;
+				this.currentTime=26;
 				videocontainer.play();
 			}, false);
 		}
@@ -161,7 +162,6 @@ document.getElementById("vid").play();
 			{	
 				el.style.display="none";
 				el2.style.display="none";
-				videocontainer.pause();
 				this.currentTime=87;
 				videocontainer.play();		
 			}, false);
