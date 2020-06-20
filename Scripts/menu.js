@@ -148,10 +148,10 @@ document.getElementById("vid").play();
 		{
 			el.addEventListener("click", function()
 			{			
-				this.currentTime+=1.5;
-				videocontainer.play();
 				el.style.display="none";
 				el2.style.display="none";
+				this.currentTime+=1.5;
+				videocontainer.play();
 			}, false);
 		}
 
@@ -159,11 +159,11 @@ document.getElementById("vid").play();
 		{
 			el2.addEventListener("click", function()
 			{	
+				el.style.display="none";
+				el2.style.display="none";
 				videocontainer.pause();
 				this.currentTime=87;
-				videocontainer.play();
-				el.style.display="none";
-				el2.style.display="none";		
+				videocontainer.play();		
 			}, false);
 		}
 
