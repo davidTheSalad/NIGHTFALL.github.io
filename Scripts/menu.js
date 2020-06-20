@@ -54,16 +54,16 @@ function myFunction() {
 
 							}
 
-							if((this.currentTime >= 111) && (this.currentTime <=111.7)){
+				//	if((this.currentTime >= 111) && (this.currentTime <=111.7)){
 
-						        document.getElementById("skipStory").style.display="block";
+				//        document.getElementById("skipStory").style.display="block";
 
-							document.getElementById("vid").pause();
+				//	document.getElementById("vid").pause();
 
-							document.getElementById("skipMessage").style.display="block";
+				//	document.getElementById("skipMessage").style.display="block";
 
 
-							}
+				//	}
 
 						    if(this.currentTime >= 113.6) {
 
