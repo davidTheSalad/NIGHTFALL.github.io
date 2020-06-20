@@ -50,9 +50,9 @@ document.getElementById("vid").play();
 	{
 		if((this.currentTime >= 25) && (this.currentTime <=25.7))
 		{
-			document.getElementById("skipStory").style.display="block";
+			el2.style.display="block";
 			videocontainer.pause();
-			document.getElementById("skipMessage").style.display="block";
+			el.style.display="block";
 		}
 
 
@@ -118,14 +118,14 @@ document.getElementById("vid").play();
 			{
 				this.currentTime=3.4;
 				videocontainer.pause();
-				document.getElementById("skipMessage").style.display="block";
+				el.style.display="block";
 			}
 
 			if ((this.currentTime >= 4.7) && (this.currentTime <=5.5))
 			{
 				this.currentTime=5.6;							
 				videocontainer.pause();
-				document.getElementById("skipMessage").style.display="block";
+				el.style.display="block";
 			}
 
 			if (this.currentTime >= 9.5)
@@ -140,7 +140,7 @@ document.getElementById("vid").play();
 			if ((this.currentTime >= 1.1) && (this.currentTime <=2.0))
 			{
 				this.currentTime=2.1;
-				document.getElementById("skipMessage").style.display="block";
+				el.style.display="block";
 			}
 		}
 
@@ -150,7 +150,7 @@ document.getElementById("vid").play();
 			{			
 				this.currentTime+=1.5;
 				videocontainer.play();
-				document.getElementById("skipMessage").style.display="none";	
+				el.style.display="none";	
 			}, false);
 		}
 
@@ -161,7 +161,7 @@ document.getElementById("vid").play();
 				
 				this.currentTime+=60;
 				videocontainer.play();
-				document.getElementById("skipStory").style.display="none";		
+				el2.style.display="none";		
 			}, false);
 		}
 
