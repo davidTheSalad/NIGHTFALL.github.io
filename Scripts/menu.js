@@ -1,4 +1,6 @@
 function myFunction() {
+	
+	Notification.close();
 
 
 				var videocontainer = document.getElementById("vid");
