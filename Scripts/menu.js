@@ -150,7 +150,8 @@ document.getElementById("vid").play();
 			{			
 				this.currentTime+=1.5;
 				videocontainer.play();
-				el.style.display="none";	
+				el.style.display="none";
+				el2.style.display="none";
 			}, false);
 		}
 
@@ -158,9 +159,10 @@ document.getElementById("vid").play();
 		{
 			el2.addEventListener("click", function()
 			{	
-				
-				this.currentTime+=60;
+				videocontainer.pause();
+				this.currentTime=87;
 				videocontainer.play();
+				el.style.display="none";
 				el2.style.display="none";		
 			}, false);
 		}
