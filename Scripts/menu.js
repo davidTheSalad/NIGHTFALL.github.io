@@ -147,7 +147,13 @@ document.getElementById("vid").play();
 
 		if (el.addEventListener)
 		{
-			
+			el.addEventListener("click", function()
+			{			
+				el.style.display="none";
+				el2.style.display="none";
+				this.currentTime=26;
+				videocontainer.play();
+			}, false);
 		}
 
 		if (el2.addEventListener)
@@ -391,5 +397,21 @@ document.getElementById("vid").play();
 		}
 	}
 	});
+}
+
+function functionEl2()
+{
+	el.style.display="none";
+	el2.style.display="none";
+	this.currentTime=26;
+	videocontainer.play();	
+}
+
+function functionEl()
+{
+	el.style.display="none";
+	el2.style.display="none";
+	this.currentTime=87;
+	videocontainer.play();	
 }
 
