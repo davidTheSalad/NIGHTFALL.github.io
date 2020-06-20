@@ -1,6 +1,4 @@
 function myFunction() {
-	
-	Notification.hide();
 
 
 				var videocontainer = document.getElementById("vid");
