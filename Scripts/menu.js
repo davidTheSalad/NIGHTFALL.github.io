@@ -59,9 +59,10 @@ document.getElementById("vid").play();
 
 		if(this.currentTime >= 113.6)
 		{
-			videocontainer.pause();
+			if (!comecou)
+			    videocontainer.pause();
+			
 			document.getElementById("choiceA").style.display="block";
-			comecou = 'true';
 		}
 	}
 	if(x1.style.display === "none" && x2.style.display === "none" && x3.style.display === "none"
@@ -381,6 +382,7 @@ document.getElementById("vid").play();
 
 function functionEl2()
 {
+	comecou = 'true';
 	var el2 = document.getElementById("skipStory");
 	var el = document.getElementById("skipMessage");
 	var videocontainer = document.getElementById("vid");
@@ -397,6 +399,7 @@ function functionEl2()
 
 function functionEl()
 {
+	comecou = 'true';
 	var el2 = document.getElementById("skipStory");
 	var el = document.getElementById("skipMessage");
 	var videocontainer = document.getElementById("vid");
