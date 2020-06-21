@@ -54,14 +54,14 @@ document.getElementById("vid").play();
 			videocontainer.pause();
 			el2.style.display="block";
 			el.style.display="block";
-		}
+			videocontainer.play();
 
 
 		if(this.currentTime >= 113.6)
 		{
 			if (!comecou)
 			    videocontainer.pause();
-			
+			videocontainer.play();
 			document.getElementById("choiceA").style.display="block";
 		}
 	}
@@ -393,9 +393,6 @@ function functionEl2()
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
 		this.currentTime+=1;
-		videocontainer.pause();
-		videocontainer.load();
-		videocontainer.play();
 	}, false);	
 }
 
@@ -412,8 +409,5 @@ function functionEl()
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
 		this.currentTime=87;
-		videocontainer.pause();
-		videocontainer.load();
-		videocontainer.play();
 	}, false);	
 }
