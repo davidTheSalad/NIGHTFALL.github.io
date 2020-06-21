@@ -145,28 +145,6 @@ document.getElementById("vid").play();
 			}
 		}
 
-		if (el.addEventListener)
-		{
-			el.addEventListener("click", function()
-			{			
-				el.style.display="none";
-				el2.style.display="none";
-				this.currentTime=26;
-				videocontainer.play();
-			}, false);
-		}
-
-		if (el2.addEventListener)
-		{
-			el2.addEventListener("click", function()
-			{	
-				el.style.display="none";
-				el2.style.display="none";
-				this.currentTime=87;
-				videocontainer.play();		
-			}, false);
-		}
-
 		if (A1.addEventListener)
 		{
 			A1.addEventListener("click", function()
@@ -407,7 +385,7 @@ function functionEl2()
 	
 	el.style.display="none";
 	el2.style.display="none";
-	this.currentTime=26;
+	this.currentTime+=1;
 	videocontainer.play();	
 }
 
@@ -419,6 +397,6 @@ function functionEl()
 	
  	el.style.display="none";
 	el2.style.display="none";
-	this.currentTime=87;
+	this.currentTime+=62;
 	videocontainer.play();	
 }
