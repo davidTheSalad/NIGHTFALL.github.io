@@ -50,7 +50,7 @@ document.getElementById("vid").play();
 	{
 		if((this.currentTime >= 25) && (this.currentTime <=25.5))
 		{
-			
+			this.currentTime = 26;
 			videocontainer.pause();
 			el2.style.display="block";
 			el.style.display="block";
