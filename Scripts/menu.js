@@ -44,9 +44,7 @@ document.getElementById("vid").play();
 		
 		
 	//escolha para continuar ou saltar a introdução
-	if(x1.style.display === "none" && x2.style.display === "none" && x3.style.display === "none"
-	   && x4.style.display === "none" && x7.style.display === "none" && x6.style.display === "none" 
-	   && x7.style.display === "none")
+	if(x1.style.display === "none")
 	{
 		if((this.currentTime >= 25) && (this.currentTime <=25.5))
 		{
@@ -64,315 +62,312 @@ document.getElementById("vid").play();
 			document.getElementById("layer1").style.display="block";
 		}
 	}
-	else
+	if (x1.style.display === "none")
 	{
-		if (x1.style.display === "none")
+		if((this.currentTime >= 31.2) && (this.currentTime <= 32.2))
 		{
-			if((this.currentTime >= 31.2) && (this.currentTime <= 32.2))
-			{
-				videocontainer.pause();
-				document.getElementById("choiceA1").style.display="block";
-			}
+			videocontainer.pause();
+			document.getElementById("choiceA1").style.display="block";
+		}
+	}
+
+	if (x2.style.display === "none")
+	{
+		if((this.currentTime >= 10) && (this.currentTime <= 12.5))
+		{
+			document.getElementById("choiceA1_1").style.display="block";
 		}
 
-		if (x2.style.display === "none")
+		if(this.currentTime >= 12.6)
 		{
-			if((this.currentTime >= 10) && (this.currentTime <= 12.5))
-			{
-				document.getElementById("choiceA1_1").style.display="block";
-			}
+			document.getElementById("choiceA1_1").style.display="none";
+		}
+	}
 
-			if(this.currentTime >= 12.6)
-			{
-				document.getElementById("choiceA1_1").style.display="none";
-			}
+	if (x3.style.display === "none")
+	{
+		if ((this.currentTime >= 1.5) && (this.currentTime <= 2.5))
+		{
+			this.currentTime=2.6;
+			videocontainer.pause();
+			document.getElementById("choiceA1_1_4").style.display="block";
+		}
+	}
+	if (x4.style.display === "none")
+	{
+		if ((this.currentTime >= 7) && (this.currentTime <=9.5))
+		{
+			document.getElementById("choiceA1_1_4_1").style.display="block";
+		}
+	}
+
+	if (x5.style.display === "none")
+	{
+		if ((this.currentTime >= 8) && (this.currentTime <=10.5))
+		{
+			document.getElementById("choiceA1_1_4_2").style.display="block";
+		}
+	}
+
+	if (x6.style.display === "none")
+	{
+		if ((this.currentTime >= 2.5) && (this.currentTime <=3.3))
+		{
+			this.currentTime=3.4;
+			videocontainer.pause();
+			el.style.display="block";
 		}
 
-		if (x3.style.display === "none")
+		if ((this.currentTime >= 4.7) && (this.currentTime <=5.5))
 		{
-			if ((this.currentTime >= 1.5) && (this.currentTime <= 2.5))
-			{
-				this.currentTime=2.6;
-				videocontainer.pause();
-				document.getElementById("choiceA1_1_4").style.display="block";
-			}
-		}
-		if (x4.style.display === "none")
-		{
-			if ((this.currentTime >= 7) && (this.currentTime <=9.5))
-			{
-				document.getElementById("choiceA1_1_4_1").style.display="block";
-			}
+			this.currentTime=5.6;							
+			videocontainer.pause();
+			el.style.display="block";
 		}
 
-		if (x5.style.display === "none")
+		if (this.currentTime >= 9.5)
 		{
-			if ((this.currentTime >= 8) && (this.currentTime <=10.5))
-			{
-				document.getElementById("choiceA1_1_4_2").style.display="block";
-			}
+			videocontainer.pause();
+			document.getElementById("FINAL").style.display="block";
 		}
+	}
 
-		if (x6.style.display === "none")
+	if (x7.style.display === "none")
+	{
+		if ((this.currentTime >= 1.1) && (this.currentTime <=2.0))
 		{
-			if ((this.currentTime >= 2.5) && (this.currentTime <=3.3))
-			{
-				this.currentTime=3.4;
-				videocontainer.pause();
-				el.style.display="block";
-			}
-
-			if ((this.currentTime >= 4.7) && (this.currentTime <=5.5))
-			{
-				this.currentTime=5.6;							
-				videocontainer.pause();
-				el.style.display="block";
-			}
-
-			if (this.currentTime >= 9.5)
-			{
-				videocontainer.pause();
-				document.getElementById("FINAL").style.display="block";
-			}
+			this.currentTime=2.1;
+			el.style.display="block";
 		}
+	}
 
-		if (x7.style.display === "none")
+	if (A1.addEventListener)
+	{
+		A1.addEventListener("click", function()
 		{
-			if ((this.currentTime >= 1.1) && (this.currentTime <=2.0))
-			{
-				this.currentTime=2.1;
-				el.style.display="block";
-			}
-		}
+			this.currentTime=115;
+			document.getElementById("choiceA").style.display="none";
+			newmp4 = "videos/A1.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer1").style.display="block";
+		}, false);
+	}
 
-		if (A1.addEventListener)
+	if (A2.addEventListener)
+	{
+		A2.addEventListener("click", function()
+		{				
+			document.getElementById("choiceA").style.display="none";
+			newmp4 = "videos/A2.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer1").style.display="block";
+		}, false);
+	}
+
+	if (A1_1.addEventListener)
+	{
+		A1_1.addEventListener("click", function()
+		{		
+			this.currentTime=32.3;
+			document.getElementById("choiceA1").style.display="none";
+			videocontainer.play();
+			newmp4 = "videos/A1_1.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer1").style.display="none";
+			document.getElementById("layer2").style.display="block";
+		}, false);
+	}
+
+	if (A1_2.addEventListener)
+	{
+		A1_2.addEventListener("click", function()
 		{
-			A1.addEventListener("click", function()
-			{
-				this.currentTime=115;
-				document.getElementById("choiceA").style.display="none";
-				newmp4 = "videos/A1.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer1").style.display="block";
-			}, false);
-		}
+			this.currentTime=32.3;
+			document.getElementById("choiceA1").style.display="none";
+			document.getElementById("vid").play();
+			newmp4 = "videos/A2.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+		}, false);
+	}
 
-		if (A2.addEventListener)
+	if (A1_1_1.addEventListener)
+	{
+		A1_1_1.addEventListener("click", function()
 		{
-			A2.addEventListener("click", function()
-			{				
-				document.getElementById("choiceA").style.display="none";
-				newmp4 = "videos/A2.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer1").style.display="block";
-			}, false);
-		}
+			document.getElementById("choiceA1_1").style.display="none";	
+		}, false);
+	}
 
-		if (A1_1.addEventListener)
+	if (A1_1_2.addEventListener)
+	{
+		A1_1_2.addEventListener("click", function()
 		{
-			A1_1.addEventListener("click", function()
-			{		
-				this.currentTime=32.3;
-				document.getElementById("choiceA1").style.display="none";
-				videocontainer.play();
-				newmp4 = "videos/A1_1.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer1").style.display="none";
-				document.getElementById("layer2").style.display="block";
-			}, false);
-		}
+			document.getElementById("choiceA1_1").style.display="none";	
+		}, false);
+	}
 
-		if (A1_2.addEventListener)
+	if (A1_1_3.addEventListener)
+	{
+		A1_1_3.addEventListener("click", function()
 		{
-			A1_2.addEventListener("click", function()
-			{
-				this.currentTime=32.3;
-				document.getElementById("choiceA1").style.display="none";
-				document.getElementById("vid").play();
-				newmp4 = "videos/A2.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-			}, false);
-		}
+			document.getElementById("choiceA1_1").style.display="none";
+		}, false);
+	}
 
-		if (A1_1_1.addEventListener)
+	if (A1_1_4.addEventListener)
+	{
+		A1_1_4.addEventListener("click", function()
 		{
-			A1_1_1.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1").style.display="none";	
-			}, false);
-		}
+			document.getElementById("choiceA1_1").style.display="none";	
+			newmp4 = "videos/A1_1_4.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer2").style.display="none";
+			document.getElementById("layer3").style.display="block";	
+		}, false);
+	}
 
-		if (A1_1_2.addEventListener)
+	if (A1_1_4_1.addEventListener)
+	{
+		A1_1_4_1.addEventListener("click", function()
 		{
-			A1_1_2.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1").style.display="none";	
-			}, false);
-		}
+			document.getElementById("choiceA1_1_4").style.display="none";
+			newmp4 = "videos/A1_1_4_1.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer3").style.display="none";
+			document.getElementById("layer4").style.display="block";									
+		}, false);
+	}
 
-		if (A1_1_3.addEventListener)
+	if (A1_1_4_2.addEventListener)
+	{
+		A1_1_4_2.addEventListener("click", function()
 		{
-			A1_1_3.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1").style.display="none";
-			}, false);
-		}
+			document.getElementById("choiceA1_1_4").style.display="none";
+			newmp4 = "videos/A1_1_4_2.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer3").style.display="none";
+			document.getElementById("layer5").style.display="block";
+		}, false);
+	}
 
-		if (A1_1_4.addEventListener)
+	if (A1_1_4_1_1.addEventListener)
+	{
+		A1_1_4_1_1.addEventListener("click", function()
 		{
-			A1_1_4.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1").style.display="none";	
-				newmp4 = "videos/A1_1_4.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer2").style.display="none";
-				document.getElementById("layer3").style.display="block";	
-			}, false);
-		}
+			document.getElementById("choiceA1_1_4_1").style.display="none";
+			newmp4 = "videos/A1_1_x_.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer4").style.display="none";
+			document.getElementById("layer7").style.display="block";
+		}, false);
+	}
 
-		if (A1_1_4_1.addEventListener)
+	if (A1_1_4_1_2.addEventListener)
+	{
+		A1_1_4_1_2.addEventListener("click", function()
 		{
-			A1_1_4_1.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1_4").style.display="none";
-				newmp4 = "videos/A1_1_4_1.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer3").style.display="none";
-				document.getElementById("layer4").style.display="block";									
-			}, false);
-		}
+			document.getElementById("choiceA1_1_4_1").style.display="none";	
+			newmp4 = "videos/FINAL.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer4").style.display="none";
+			document.getElementById("layer6").style.display="block";									
+		}, false);
+	}
 
-		if (A1_1_4_2.addEventListener)
+	if (A1_1_4_2_1.addEventListener)
+	{
+		A1_1_4_2_1.addEventListener("click", function()
 		{
-			A1_1_4_2.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1_4").style.display="none";
-				newmp4 = "videos/A1_1_4_2.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer3").style.display="none";
-				document.getElementById("layer5").style.display="block";
-			}, false);
-		}
+			document.getElementById("choiceA1_1_4_2").style.display="none";
+			newmp4 = "videos/A1_1_x_.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer5").style.display="none";
+			document.getElementById("layer7").style.display="block";
 
-		if (A1_1_4_1_1.addEventListener)
+		}, false);
+	}
+
+	if (A1_1_4_2_2.addEventListener) 
+	{
+		A1_1_4_2_2.addEventListener("click", function() 
 		{
-			A1_1_4_1_1.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1_4_1").style.display="none";
-				newmp4 = "videos/A1_1_x_.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer4").style.display="none";
-				document.getElementById("layer7").style.display="block";
-			}, false);
-		}
 
-		if (A1_1_4_1_2.addEventListener)
+			document.getElementById("choiceA1_1_4_2").style.display="none";
+			document.getElementById("layer5").style.display="none";
+
+		}, false);
+	}
+
+	if (FINAL1.addEventListener) 
+	{
+		FINAL1.addEventListener("click", function() 
 		{
-			A1_1_4_1_2.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1_4_1").style.display="none";	
-				newmp4 = "videos/FINAL.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer4").style.display="none";
-				document.getElementById("layer6").style.display="block";									
-			}, false);
-		}
+			document.getElementById("FINAL").style.display="none";	
+			newmp4 = "videos/FINAL1.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer6").style.display="none";
+		}, false);
+	}
 
-		if (A1_1_4_2_1.addEventListener)
+	if (FINAL2.addEventListener)
+	{
+		FINAL2.addEventListener("click", function()
 		{
-			A1_1_4_2_1.addEventListener("click", function()
-			{
-				document.getElementById("choiceA1_1_4_2").style.display="none";
-				newmp4 = "videos/A1_1_x_.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer5").style.display="none";
-				document.getElementById("layer7").style.display="block";
+			document.getElementById("FINAL").style.display="none";
+			newmp4 = "videos/FINAL2.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer6").style.display="none";
+		}, false);
+	}
 
-			}, false);
-		}
-
-		if (A1_1_4_2_2.addEventListener) 
+	if (FINAL3.addEventListener)
+	{
+		FINAL3.addEventListener("click", function()
 		{
-			A1_1_4_2_2.addEventListener("click", function() 
-			{
-
-				document.getElementById("choiceA1_1_4_2").style.display="none";
-				document.getElementById("layer5").style.display="none";
-
-			}, false);
-		}
-
-		if (FINAL1.addEventListener) 
-		{
-			FINAL1.addEventListener("click", function() 
-			{
-				document.getElementById("FINAL").style.display="none";	
-				newmp4 = "videos/FINAL1.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer6").style.display="none";
-			}, false);
-		}
-
-		if (FINAL2.addEventListener)
-		{
-			FINAL2.addEventListener("click", function()
-			{
-				document.getElementById("FINAL").style.display="none";
-				newmp4 = "videos/FINAL2.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer6").style.display="none";
-			}, false);
-		}
-
-		if (FINAL3.addEventListener)
-		{
-			FINAL3.addEventListener("click", function()
-			{
-				document.getElementById("FINAL").style.display="none";
-				newmp4 = "videos/FINAL3.mp4";
-				videocontainer.pause();
-				videosource.setAttribute("src", newmp4);
-				videocontainer.load();
-				videocontainer.play();
-				document.getElementById("layer6").style.display="none";
-			}, false);
-		}
+			document.getElementById("FINAL").style.display="none";
+			newmp4 = "videos/FINAL3.mp4";
+			videocontainer.pause();
+			videosource.setAttribute("src", newmp4);
+			videocontainer.load();
+			videocontainer.play();
+			document.getElementById("layer6").style.display="none";
+		}, false);
 	}
 	});
 }
