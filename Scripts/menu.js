@@ -58,6 +58,7 @@ document.getElementById("vid").play();
 		if(this.currentTime >= 113.6)
 		{	
 			document.getElementById("choiceA").style.display="block";
+			comecou = 'true';
 		}
 	}
 	if(x1.style.display === "none" && x2.style.display === "none" && x3.style.display === "none"
