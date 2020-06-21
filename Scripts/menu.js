@@ -385,7 +385,11 @@ function functionEl2()
 	
 	el.style.display="none";
 	el2.style.display="none";
-	this.currentTime+=1;
+	
+	document.getElementById("vid").addEventListener("timeupdate", function()
+	{
+		this.currentTime+=1;
+	});
 	videocontainer.play();	
 }
 
@@ -397,6 +401,10 @@ function functionEl()
 	
  	el.style.display="none";
 	el2.style.display="none";
-	this.currentTime+=62;
+	
+	document.getElementById("vid").addEventListener("timeupdate", function()
+	{
+		this.currentTime+=62;
+	});
 	videocontainer.play();	
 }
