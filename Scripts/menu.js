@@ -390,7 +390,8 @@ function functionEl2()
 	
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
-		this.currentTime+=1;
+		this.currentTime+=1
+		this.play();
 	}, false);	
 }
 
@@ -406,5 +407,6 @@ function functionEl()
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
 		this.currentTime=87;
+		this.play();
 	}, false);	
 }
