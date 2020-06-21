@@ -415,6 +415,6 @@ function functionEl()
 	
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
-		this.currentTime=87;
+		this.currentTime=83;
 	}, false);	
 }
