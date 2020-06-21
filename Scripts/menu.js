@@ -50,17 +50,18 @@ document.getElementById("vid").play();
 	{
 		if((this.currentTime >= 25) && (this.currentTime <=25.5))
 		{
-			this.currentTime=26;
-			el2.style.display="block";
+			
 			videocontainer.pause();
+			el2.style.display="block";
 			el.style.display="block";
 		}
 
 
 		if(this.currentTime >= 113.6)
 		{
-			document.getElementById("choiceA").style.display="block";
 			videocontainer.pause();
+			document.getElementById("choiceA").style.display="block";
+			comecou = 'true';
 		}
 	}
 	if(x1.style.display === "none" && x2.style.display === "none" && x3.style.display === "none"
