@@ -62,7 +62,8 @@ document.getElementById("vid").play();
 		}
 	}
 	if(x1.style.display === "none" && x2.style.display === "none" && x3.style.display === "none"
-	   && x4.style.display === "none" && x5.style.display === "none" && x6.style.display === "none")
+	   && x4.style.display === "none" && x5.style.display === "none" && x6.style.display === "none"
+	  && comecou === 'true')
 	{
 		if((this.currentTime >= 31.2) && (this.currentTime <= 32.2))
 		{
