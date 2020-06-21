@@ -59,8 +59,8 @@ document.getElementById("vid").play();
 			
 			el2.style.display="block";
 			el.style.display="block";
-
-		comecou = 'false';
+			comecou = 'false';
+		}
 			
 		if(this.currentTime >= 113.6)
 		{
