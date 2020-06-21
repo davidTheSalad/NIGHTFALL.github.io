@@ -401,6 +401,9 @@ document.getElementById("vid").play();
 
 function functionEl2()
 {
+	var el2 = document.getElementById("skipStory");
+	var el = document.getElementById("skipMessage");
+	
 	el.style.display="none";
 	el2.style.display="none";
 	this.currentTime=26;
@@ -409,9 +412,11 @@ function functionEl2()
 
 function functionEl()
 {
-	el.style.display="none";
+	var el2 = document.getElementById("skipStory");
+	var el = document.getElementById("skipMessage");
+	
+ 	el.style.display="none";
 	el2.style.display="none";
 	this.currentTime=87;
 	videocontainer.play();	
 }
-
