@@ -51,24 +51,12 @@ document.getElementById("vid").play();
 		if((this.currentTime >= 25) && (this.currentTime <=25.5))
 		{
 			this.currentTime = 26;
-			
-			if (!comecou)
-				videocontainer.pause();
-			else
-				videocontainer.play();
-			
 			el2.style.display="block";
 			el.style.display="block";
-			comecou = 'false';
 		}
 			
 		if(this.currentTime >= 113.6)
-		{
-			if (!comecou)
-				videocontainer.pause();
-			else
-				videocontainer.play();
-			
+		{	
 			document.getElementById("choiceA").style.display="block";
 		}
 	}
@@ -389,7 +377,6 @@ document.getElementById("vid").play();
 
 function functionEl2()
 {
-	comecou = 'true';
 	var el2 = document.getElementById("skipStory");
 	var el = document.getElementById("skipMessage");
 	var videocontainer = document.getElementById("vid");
@@ -399,14 +386,12 @@ function functionEl2()
 	
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
-		this.play();
 		this.currentTime+=1;
 	}, false);	
 }
 
 function functionEl()
 {
-	comecou = 'true';
 	var el2 = document.getElementById("skipStory");
 	var el = document.getElementById("skipMessage");
 	var videocontainer = document.getElementById("vid");
@@ -416,7 +401,6 @@ function functionEl()
 	
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
-		this.play();
 		this.currentTime=83;
 	}, false);	
 }
