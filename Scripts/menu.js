@@ -61,7 +61,6 @@ document.getElementById("vid").play();
 		{
 			document.getElementById("choiceA").style.display="block";
 			videocontainer.pause();
-			document.getElementById("layer1").style.display="block";
 		}
 	}
 	if(x1.style.display === "none" && x2.style.display === "none" && x3.style.display === "none"
@@ -406,7 +405,7 @@ function functionEl()
 	
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
-		this.currentTime+=62;
+		this.currentTime=87;
 	}, false);
 	videocontainer.play();	
 }
