@@ -51,17 +51,23 @@ document.getElementById("vid").play();
 		if((this.currentTime >= 25) && (this.currentTime <=25.5))
 		{
 			this.currentTime = 26;
-			videocontainer.pause();
+			
+			if (!comecou)
+				videocontainer.pause();
+			else
+				videocontainer.play();
+			
 			el2.style.display="block";
 			el.style.display="block";
-			videocontainer.play();
 
 
 		if(this.currentTime >= 113.6)
 		{
 			if (!comecou)
-			    videocontainer.pause();
-			videocontainer.play();
+				videocontainer.pause();
+			else
+				videocontainer.play();
+			
 			document.getElementById("choiceA").style.display="block";
 		}
 	}
