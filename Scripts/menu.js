@@ -19,13 +19,13 @@ var A1_1_4_1_1 = document.getElementById("A1_1_4_1_1");
 var A1_1_4_1_2 = document.getElementById("A1_1_4_1_2");
 var A1_1_4_2_1 = document.getElementById("A1_1_4_2_1");
 var A1_1_4_2_2 = document.getElementById("A1_1_4_2_2");
+var comecou = 'false';
 var x1 = document.getElementById("layer1");
 var x2 = document.getElementById("layer2");
 var x3 = document.getElementById("layer3");
 var x4 = document.getElementById("layer4");
 var x5 = document.getElementById("layer5");
 var x6 = document.getElementById("layer6");
-var x7 = document.getElementById("layer7");
 var FINAL = document.getElementById("FINAL");
 var FINAL1 = document.getElementById("FINAL1");
 var FINAL2 = document.getElementById("FINAL2");
@@ -44,7 +44,9 @@ document.getElementById("vid").play();
 		
 		
 	//escolha para continuar ou saltar a introdução
-	if(x1.style.display === "none")
+	if(x1.style.display === "none" && x2.style.display === "none" && x3.style.display === "none"
+	   && x4.style.display === "none" && x5.style.display === "none" && x6.style.display === "none"
+	   && comecou === 'false')
 	{
 		if((this.currentTime >= 25) && (this.currentTime <=25.5))
 		{
@@ -62,7 +64,8 @@ document.getElementById("vid").play();
 			document.getElementById("layer1").style.display="block";
 		}
 	}
-	if (x1.style.display === "none")
+	if(x1.style.display === "none" && x2.style.display === "none" && x3.style.display === "none"
+	   && x4.style.display === "none" && x5.style.display === "none" && x6.style.display === "none")
 	{
 		if((this.currentTime >= 31.2) && (this.currentTime <= 32.2))
 		{
@@ -71,7 +74,8 @@ document.getElementById("vid").play();
 		}
 	}
 
-	if (x2.style.display === "none")
+	if(x1.style.display === "block" && x2.style.display === "none" && x3.style.display === "none"
+	   && x4.style.display === "none" && x5.style.display === "none" && x6.style.display === "none")
 	{
 		if((this.currentTime >= 10) && (this.currentTime <= 12.5))
 		{
@@ -84,7 +88,8 @@ document.getElementById("vid").play();
 		}
 	}
 
-	if (x3.style.display === "none")
+	if(x1.style.display === "block" && x2.style.display === "block" && x3.style.display === "none"
+	   && x4.style.display === "none" && x5.style.display === "none" && x6.style.display === "none")
 	{
 		if ((this.currentTime >= 1.5) && (this.currentTime <= 2.5))
 		{
@@ -93,7 +98,8 @@ document.getElementById("vid").play();
 			document.getElementById("choiceA1_1_4").style.display="block";
 		}
 	}
-	if (x4.style.display === "none")
+	if(x1.style.display === "block" && x2.style.display === "block" && x3.style.display === "block"
+	   && x4.style.display === "none" && x5.style.display === "none" && x6.style.display === "none")
 	{
 		if ((this.currentTime >= 7) && (this.currentTime <=9.5))
 		{
@@ -101,7 +107,8 @@ document.getElementById("vid").play();
 		}
 	}
 
-	if (x5.style.display === "none")
+	if(x1.style.display === "block" && x2.style.display === "block" && x3.style.display === "block"
+	   && x4.style.display === "block" && x5.style.display === "none" && x6.style.display === "none")
 	{
 		if ((this.currentTime >= 8) && (this.currentTime <=10.5))
 		{
@@ -109,7 +116,8 @@ document.getElementById("vid").play();
 		}
 	}
 
-	if (x6.style.display === "none")
+	if(x1.style.display === "block" && x2.style.display === "block" && x3.style.display === "block"
+	   && x4.style.display === "block" && x5.style.display === "block" && x6.style.display === "none")
 	{
 		if ((this.currentTime >= 2.5) && (this.currentTime <=3.3))
 		{
@@ -132,7 +140,8 @@ document.getElementById("vid").play();
 		}
 	}
 
-	if (x7.style.display === "none")
+	if(x1.style.display === "block" && x2.style.display === "block" && x3.style.display === "block"
+	   && x4.style.display === "block" && x5.style.display === "block" && x6.style.display === "block")
 	{
 		if ((this.currentTime >= 1.1) && (this.currentTime <=2.0))
 		{
@@ -282,7 +291,6 @@ document.getElementById("vid").play();
 			videocontainer.load();
 			videocontainer.play();
 			document.getElementById("layer4").style.display="none";
-			document.getElementById("layer7").style.display="block";
 		}, false);
 	}
 
@@ -312,7 +320,6 @@ document.getElementById("vid").play();
 			videocontainer.load();
 			videocontainer.play();
 			document.getElementById("layer5").style.display="none";
-			document.getElementById("layer7").style.display="block";
 
 		}, false);
 	}
