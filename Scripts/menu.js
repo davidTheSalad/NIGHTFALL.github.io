@@ -403,6 +403,7 @@ function functionEl2()
 {
 	var el2 = document.getElementById("skipStory");
 	var el = document.getElementById("skipMessage");
+	var videocontainer = document.getElementById("vid");
 	
 	el.style.display="none";
 	el2.style.display="none";
@@ -414,6 +415,7 @@ function functionEl()
 {
 	var el2 = document.getElementById("skipStory");
 	var el = document.getElementById("skipMessage");
+	var videocontainer = document.getElementById("vid");
 	
  	el.style.display="none";
 	el2.style.display="none";
