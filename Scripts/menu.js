@@ -3,7 +3,6 @@ function myFunction() {
 
 				var videocontainer = document.getElementById("vid");
 				var videosource = document.getElementById("mp4video");
-				var el2 = document.getElementById("skipStory");
 				var el = document.getElementById("skipMessage");
                                 var A1 = document.getElementById("A1");
 				var A2 = document.getElementById("A2");
@@ -35,35 +34,10 @@ function myFunction() {
 
 
 	document.getElementById("single").style.display="none"; 
-    document.getElementById("options").style.display="none"; 
-    document.getElementById("credits").style.display="none";
 
     document.getElementById("vid").play();
 	
 	document.getElementById("vid").addEventListener("timeupdate", function(){
-
-                                                        if((this.currentTime >= 25) && (this.currentTime <=25.7)){
-
-
-                                                        document.getElementById("skipStory").style.display="block";
-
-							document.getElementById("vid").pause();
-
-							document.getElementById("skipMessage").style.display="block";
-
-
-							}
-
-							if((this.currentTime >= 111) && (this.currentTime <=111.7)){
-
-						        document.getElementById("skipStory").style.display="block";
-
-							document.getElementById("vid").pause();
-
-							document.getElementById("skipMessage").style.display="block";
-
-
-							}
 
 						    if(this.currentTime >= 113.6) {
 
@@ -87,7 +61,7 @@ function myFunction() {
 						
 						if((this.currentTime >= 31.2) && (this.currentTime <= 32.2)) {
 							
-									document.getElementById("vid").pause();
+									videocontainer.pause();
 									document.getElementById("choiceA1").style.display="block";
 							
 						}
@@ -98,20 +72,15 @@ function myFunction() {
 						if((this.currentTime >= 4.5) && (this.currentTime <= 5.2)) {
 						
 						this.currentTime=5.3;
-						document.getElementById("vid").pause();
+						videocontainer.pause();
 						document.getElementById("skipMessage").style.display="block";
 						}
 						
 						if((this.currentTime >= 10) && (this.currentTime <= 12.5)) {
-							
-									document.getElementById("choiceA1_1").style.display="block";
-							
+							document.getElementById("choiceA1_1").style.display="block";
 						}
-							
-						if(this.currentTime >= 12.6) {
-							
-									document.getElementById("choiceA1_1").style.display="none";
-							
+						if(this.currentTime >= 12.6) {	
+							document.getElementById("choiceA1_1").style.display="none";
 						}
                                                 }
 		
@@ -120,7 +89,7 @@ function myFunction() {
 						if ((this.currentTime >= 1.5) && (this.currentTime <= 2.5)) {
 							
 						this.currentTime=2.6;
-						document.getElementById("vid").pause();
+						videocontainer.pause();
 						document.getElementById("choiceA1_1_4").style.display="block";
 						}
                                                 }
@@ -146,20 +115,20 @@ function myFunction() {
 						if ((this.currentTime >= 2.5) && (this.currentTime <=3.3)) {
 						
 						this.currentTime=3.4;
-						document.getElementById("vid").pause();
+						videocontainer.pause();
 						document.getElementById("skipMessage").style.display="block";
 						}
 							
 						if ((this.currentTime >= 4.7) && (this.currentTime <=5.5)) {
 							
 						this.currentTime=5.6;							
-						document.getElementById("vid").pause();
+						videocontainer.pause();
 						document.getElementById("skipMessage").style.display="block";
 						}
 							
 						if (this.currentTime >= 9.5) {
 							
-						document.getElementById("vid").pause();
+						videocontainer.pause();
 						document.getElementById("FINAL").style.display="block";
 						}
 						}
@@ -177,20 +146,8 @@ function myFunction() {
 								el.addEventListener("click", function() {
 									
 									this.currentTime+=1;
-									document.getElementById("vid").play();
+									videocontainer.play();
 									document.getElementById("skipMessage").style.display="none";
-									
-									
-								}, false);
-						}
-
-                                                if (el2.addEventListener) {
-								el2.addEventListener("click", function() {
-									
-									this.currentTime+=62;
-
-									document.getElementById("vid").play();
-									document.getElementById("skipStory").style.display="none";
 									
 									
 								}, false);
