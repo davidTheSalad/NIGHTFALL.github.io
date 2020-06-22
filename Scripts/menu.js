@@ -3,7 +3,6 @@ function myFunction() {
 
 var videocontainer = document.getElementById("vid");
 var videosource = document.getElementById("mp4video");
-var el2 = document.getElementById("skipStory");
 var el = document.getElementById("skipMessage");
 var A1 = document.getElementById("A1");
 var A2 = document.getElementById("A2");
@@ -51,7 +50,6 @@ document.getElementById("vid").play();
 		if((this.currentTime >= 25) && (this.currentTime <=25.5))
 		{
 			this.currentTime = 26;
-			el2.style.display="block";
 			el.style.display="block";
 		}
 			
@@ -380,20 +378,6 @@ document.getElementById("vid").play();
 	});
 }
 
-function functionEl2()
-{
-	var el2 = document.getElementById("skipStory");
-	var el = document.getElementById("skipMessage");
-	var videocontainer = document.getElementById("vid");
-	
-	el.style.display="none";
-	el2.style.display="none";
-	
-	document.getElementById("vid").addEventListener("timeupdate", function()
-	{
-	}, false);	
-}
-
 function functionEl()
 {
 	var el2 = document.getElementById("skipStory");
@@ -405,5 +389,6 @@ function functionEl()
 	
 	document.getElementById("vid").addEventListener("timeupdate", function()
 	{
+		this.currentTime += 1;
 	}, false);	
 }
