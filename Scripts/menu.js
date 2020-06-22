@@ -380,7 +380,6 @@ document.getElementById("vid").play();
 
 function functionEl()
 {
-	var el2 = document.getElementById("skipStory");
 	var el = document.getElementById("skipMessage");
 	var videocontainer = document.getElementById("vid");
 	
