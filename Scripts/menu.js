@@ -57,6 +57,7 @@ document.getElementById("vid").play();
 			
 		if(this.currentTime >= 113.6)
 		{	
+			videocontainer.pause();
 			document.getElementById("choiceA").style.display="block";
 			comecou = 'true';
 		}
