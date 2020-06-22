@@ -47,11 +47,6 @@ document.getElementById("vid").play();
 	   && x4.style.display === "none" && x5.style.display === "none" && x6.style.display === "none"
 	   && comecou === 'false')
 	{
-		if((this.currentTime >= 25) && (this.currentTime <=25.5))
-		{
-			this.currentTime = 26;
-			el.style.display="block";
-		}
 			
 		if(this.currentTime >= 113.6)
 		{	
