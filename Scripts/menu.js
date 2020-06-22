@@ -34,8 +34,6 @@ var newmp4;
 
 
 document.getElementById("single").style.display="none"; 
-document.getElementById("options").style.display="none"; 
-document.getElementById("credits").style.display="none";
 document.getElementById("vid").play();
 	
 	document.getElementById("vid").addEventListener("timeupdate", function()
